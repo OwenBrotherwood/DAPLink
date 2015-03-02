@@ -112,15 +112,29 @@ Provides definitions about:
 #define TDI_PIN										16
 #define SWO_TDO_PORT							0
 #define SWO_TDO_PIN								23
-#define RESET_PORT								1
-#define RESET_PIN									19
+#ifdef IDAP_PROTO
 #define TRST_PORT									0
 #define TRST_PIN									22
+#define RESET_PORT								1
+#define RESET_PIN									19
+#else
+#define TRST_PORT									0
+#define TRST_PIN									20
+#define RESET_PORT								0
+#define RESET_PIN									17
+#endif
 
+#ifdef IDAP_PROTO
 #define LED_CON_PORT		0
-#define LED_CON_PIN			17		// LED1 Red Connect
+#define LED_CON_PIN			17		// LED1 Red
 #define LED_RUN_PORT		1
-#define LED_RUN_PIN			15		// LED2 Green Run
+#define LED_RUN_PIN			15		// LED2 Green
+#else
+#define LED_CON_PORT		0
+#define LED_CON_PIN			9		// LED1 Red
+#define LED_RUN_PORT		0
+#define LED_RUN_PIN			8		// LED2 Green
+#endif
 
 
 //**************************************************************************************************
