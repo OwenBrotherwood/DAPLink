@@ -1,4 +1,11 @@
-# DAPLink
+# WIP
+<https://github.com/mbedmicro/DAPLink/issues/197#issuecomment-281826833>
+UNKNOWN as to if the merged trees can be compiled with GCC
+<https://github.com/OwenBrotherwood/DAPLink/tree/freescale>
+<https://github.com/OwenBrotherwood/DAPLink/tree/CMSIS-DAP_IDAP-Link>
+
+
+# DAPLink or something near?
 
 ## Setup
 Skip any step where a compatible tool already exists
