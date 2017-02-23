@@ -15,6 +15,25 @@ As the present DAPLink is used for micro:bit, it would be nice for GCC.
 - <https://github.com/OwenBrotherwood/DAPLink/tree/freescale>
 - <https://github.com/OwenBrotherwood/DAPLink/tree/CMSIS-DAP_IDAP-Link>
 
+## Everything starts when you have hardware
+
+<http://tech.microbit.org/hardware/>
+
+```bash
+Interface
+
+The interface chip handles the USB connection, and is used for flashing new code to the micro:bit, sending and receiving serial data back and forth to your main computer.
+
+item	details
+Model	Freescale MKL26Z128VFM4
+Core variant:	ARM Cortex-M0+
+Flash ROM	32KB
+RAM	4KB
+Speed	16MHz
+Debug capabilities	SWD
+More Info	here
+```
+
 ### Comments to merged work
 
 The merge of the two trees into the <https://github.com/OwenBrotherwood/DAPLink/tree/freescale-i-sys> tree/branch/whatever gave:
