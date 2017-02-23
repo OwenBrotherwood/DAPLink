@@ -1,11 +1,49 @@
-# WIP
+# WIP Support GCC
+
+DAPLink doesn't seem to be GCC friendly.
+
+As the present DAPLink is used for micro:bit, it would be nice for GCC.
+
+<https://github.com/mbedmicro/DAPLink/tree/freescale>
+
+## Support GCC
+
 <https://github.com/mbedmicro/DAPLink/issues/197#issuecomment-281826833>
-UNKNOWN as to if the merged trees can be compiled with GCC
-<https://github.com/OwenBrotherwood/DAPLink/tree/freescale>
-<https://github.com/OwenBrotherwood/DAPLink/tree/CMSIS-DAP_IDAP-Link>
 
+## UNKNOWN as to if the merged trees can be compiled with GCC
 
-# DAPLink or something near?
+- <https://github.com/OwenBrotherwood/DAPLink/tree/freescale>
+- <https://github.com/OwenBrotherwood/DAPLink/tree/CMSIS-DAP_IDAP-Link>
+
+### Comments to merged work
+
+The merge of the two trees into the <https://github.com/OwenBrotherwood/DAPLink/tree/freescale-i-sys> tree/branch/whatever gave:
+
+```bash
+C:\source\repos\github\OwenBrotherwood\DAPLink>git merge CMSIS-DAP_IDAP-Link
+Auto-merging source/common/hal/nxp/lpc11u35/DAP_config.h
+CONFLICT (modify/delete): interface/mdk/lpc11u35/lpc11u35_interface.uvproj deleted in HEAD and
+modified in CMSIS-DAP_IDAP-Link. Version CMSIS-DAP_IDAP-Link of interface/mdk/lpc11u35/lpc11u35
+_interface.uvproj left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+error: addinfo_cache failed for path 'source/common/hal/nxp/lpc11u35/DAP_config.h'
+
+C:\source\repos\github\OwenBrotherwood\DAPLink>git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff
+Merging:
+interface/mdk/lpc11u35/lpc11u35_interface.uvproj
+
+Deleted merge conflict for 'interface/mdk/lpc11u35/lpc11u35_interface.uvproj':
+  {local}: deleted
+  {remote}: modified file
+Use (m)odified or (d)eleted file, or (a)bort? m
+```
+
+# DAPLink
 
 ## Setup
 Skip any step where a compatible tool already exists
